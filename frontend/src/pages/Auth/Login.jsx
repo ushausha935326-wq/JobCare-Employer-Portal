@@ -1,9 +1,12 @@
 import "./Login.css";
 
+import logo from "../../assets/images/jobcare-logo.png";
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <div className="login-container">
       <div className="login-left">
+        <img src={logo} alt="JobCare Logo" className="jobcare-logo" />
         <h1>JobCare</h1>
 
         <h2>Connecting Talent.</h2>
@@ -33,9 +36,11 @@ function Login() {
           <button type="submit">Login</button>
         </form>
 
-        <p className="forgot-password">Forgot Password?</p>
+        <Link to="/forgot-password" className="forgot-password">
+           Forgot Password?
+        </Link>
         <p className="signup-text">
-            Don't have an account? <span>Sign Up</span>
+           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
       </div>
     </div>

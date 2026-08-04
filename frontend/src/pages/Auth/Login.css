@@ -47,10 +47,12 @@ body {
 }
 /* forgot pasward */
 .forgot-password {
+  display: block;
   color: #1E3A8A;
   cursor: pointer;
   text-align: right;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .forgot-password:hover {
@@ -98,4 +100,20 @@ body {
 
 .signup-text {
   color: #6b7280 !important;
+}
+
+/*logo*/
+.jobcare-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 60px;
 }
