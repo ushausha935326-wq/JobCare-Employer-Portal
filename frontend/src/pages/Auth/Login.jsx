@@ -1,34 +1,62 @@
 import "./Login.css";
 
-import logo from "../../assets/images/jobcare-logo.png";
+import BrandSection from "../../components/BrandSection";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  function handleLogin(e) {
+  e.preventDefault();
+
+  if (!email.trim()) {
+    setError("Please enter your email.");
+    return;
+  }
+
+  if (!password.trim()) {
+    setError("Please enter your password.");
+    return;
+  }
+
+  setError("");
+  alert("Validation successful!");
+}
   return (
     <div className="login-container">
-      <div className="login-left">
-        <img src={logo} alt="JobCare Logo" className="jobcare-logo" />
-        <h1>JobCare</h1>
-
-        <h2>Connecting Talent.</h2>
-
-        <h2>Creating Opportunities.</h2>
-
-        <p>
-         India's trusted platform connecting employers with skilled blue-collar
-         workers.
-        </p>
-      </div>
+      <BrandSection />
       <div className="login-card">
         <h1>Welcome Back!</h1>
 
         <p>Sign in to your employer account</p>
 
-        <form>
-          <input type="email" placeholder="Enter your email" />
+        <form onSubmit={handleLogin}>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-          <input type="password" placeholder="Enter your password" />
+          <div className="password-field">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
-          
+            <button
+              type="button"
+              className="toggle-password"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "Hide" : "Show"}
+            </button>
+          </div>
+          {error && <p className="error-message">{error}</p>}
           <div className="remember-me">
             <input type="checkbox" id="remember" />
             <label htmlFor="remember">Remember Me</label>

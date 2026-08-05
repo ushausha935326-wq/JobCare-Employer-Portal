@@ -1,26 +1,9 @@
 import "./Login.css";
-
+import BrandSection from "../../components/BrandSection";
 function Signup() {
   return (
     <div className="login-container">
-      <div className="login-left">
-        <img
-          src={new URL("../../assets/images/jobcare-logo.png", import.meta.url).href}
-          alt="JobCare Logo"
-          className="jobcare-logo"
-        />
-
-        <h1>JobCare</h1>
-
-        <h2>Connecting Talent.</h2>
-
-        <h2>Creating Opportunities.</h2>
-
-        <p>
-          India's trusted platform connecting employers with skilled blue-collar
-          workers.
-        </p>
-      </div>
+      <BrandSection />
       <div className="login-card">
             <h1>Create Account</h1>
 

@@ -370,3 +370,185 @@ Authentication Module
 - Explain what each CSS rule and React code does.
 - Build portfolio-quality code suitable for a startup product.
 - Aim for a modern corporate UI that will be reused across all 17 modules.
+# JobCare Employer Portal - Mentor Context
+
+## Project Information
+
+Project Name: JobCare Employer Portal
+
+Developer: Usha
+
+Mentor: ChatGPT
+
+Current Step: MC-4.14
+
+Project Status: Authentication Module In Progress
+
+---
+
+## Team Architecture
+
+Candidate App:
+Built by teammates
+
+Employer Website:
+Built by Usha
+
+Backend:
+Django REST Framework (DRF)
+
+Authentication:
+JWT (JSON Web Tokens)
+
+Database:
+PostgreSQL
+
+API:
+REST APIs will be provided by teammates
+
+---
+
+## Development Rules
+
+1. Give only ONE task at a time.
+2. Keep explanations beginner-friendly.
+3. Always mention the exact file.
+4. Always mention exactly where to edit.
+5. Wait until Usha completes each step.
+6. Build production-quality code.
+7. Employer Website only.
+8. Never modify backend.
+9. Explain WHY every code change is made.
+10. Reuse components whenever possible.
+
+---
+
+## Current Folder Structure
+
+frontend/
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │       └── jobcare-logo.png
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── BrandSection.jsx (Created)
+│   ├── pages/
+│   │   └── Auth/
+│   │       ├── Login.jsx
+│   │       ├── Login.css
+│   │       ├── Signup.jsx
+│   │       └── ForgotPassword.jsx
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   ├── App.jsx
+│   └── main.jsx
+
+---
+
+## Completed
+
+✅ React + Vite Setup
+
+✅ React Router
+
+✅ Professional Folder Structure
+
+✅ Authentication Folder
+
+✅ Login Page UI
+
+✅ Professional Login Layout
+
+✅ Branding Section
+
+✅ Temporary JobCare Logo
+
+✅ Login Card
+
+✅ Email Field
+
+✅ Password Field
+
+✅ Remember Me
+
+✅ Login Button
+
+✅ Forgot Password Link
+
+✅ Sign Up Link
+
+✅ Card Shadow
+
+✅ Flexbox Layout
+
+✅ Removed <br /> Layout
+
+✅ Signup Page Created
+
+✅ Forgot Password Page Created
+
+✅ Multi-page Navigation Working
+
+✅ React Router Link Navigation
+
+✅ Authentication Routes Working
+
+✅ BrandSection Component Created (Ready to reuse)
+
+---
+
+## Authentication Progress
+
+Completed:
+
+- Login UI
+- Signup UI Foundation
+- Forgot Password Foundation
+- Navigation
+- Routing
+
+Remaining:
+
+⬜ Replace duplicate branding with BrandSection component
+
+⬜ Show/Hide Password
+
+⬜ Form Validation
+
+⬜ Responsive Design
+
+⬜ Django JWT Login API
+
+⬜ Signup API
+
+⬜ Forgot Password API
+
+---
+
+## Next Session (MC-4.15)
+
+1. Use BrandSection component in Login page
+
+2. Use BrandSection component in Signup page
+
+3. Use BrandSection component in Forgot Password page
+
+4. Explain React Components and Reusability
+
+5. Show/Hide Password
+
+6. JWT Authentication
+
+---
+
+## Mentor Notes
+
+- Continue teaching as if Usha is learning React for the first time.
+- Never assume coding knowledge.
+- Explain every new concept with simple examples.
+- One task at a time.
+- Always prioritize clean project architecture.
+- Build a portfolio-quality startup application.
+- Temporary assets can be replaced later without changing code.
