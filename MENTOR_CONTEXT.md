@@ -552,3 +552,45 @@ Remaining:
 - Always prioritize clean project architecture.
 - Build a portfolio-quality startup application.
 - Temporary assets can be replaced later without changing code.
+
+# MC-5 Progress Update
+
+## Date
+06 August 2026
+
+## Completed Today
+
+### Authentication Improvements
+- Implemented reusable BrandSection component across Login, Signup, and Forgot Password pages.
+- Added React `useState` for form state management.
+- Implemented Show/Hide Password functionality.
+- Converted Email input into a controlled component.
+- Converted Password input into a controlled component.
+- Added client-side login validation.
+- Displays validation messages:
+  - Please enter your email.
+  - Please enter your password.
+- Validation succeeds when both fields are entered correctly.
+
+## Current Project Status
+
+Authentication UI is complete and interactive.
+
+Completed:
+- Login Page
+- Signup Page
+- Forgot Password Page
+- React Router Navigation
+- Reusable BrandSection
+- Show/Hide Password
+- Controlled Inputs
+- Login Validation
+
+## Next Step (MC-6)
+
+- Add Loading Login Button
+- Disable Login button while logging in
+- Email format validation
+- Password strength validation
+- Replace Show/Hide text with Eye icon
+- Integrate Django JWT Authentication APIs (when backend team shares them)

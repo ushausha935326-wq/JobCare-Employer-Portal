@@ -3,11 +3,13 @@ import "./Login.css";
 import BrandSection from "../../components/BrandSection";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   function handleLogin(e) {
   e.preventDefault();
 
@@ -16,13 +18,23 @@ function Login() {
     return;
   }
 
+  if (!email.includes("@")) {
+  setError("Please enter a valid email address.");
+  return;
+}
+
   if (!password.trim()) {
     setError("Please enter your password.");
     return;
   }
 
   setError("");
-  alert("Validation successful!");
+  setLoading(true);
+
+  setTimeout(() => {
+    setLoading(false);
+    alert("Validation successful!");
+}, 2000);
 }
   return (
     <div className="login-container">
@@ -53,7 +65,7 @@ function Login() {
               className="toggle-password"
               onClick={() => setShowPassword(!showPassword)}
             >
-              {showPassword ? "Hide" : "Show"}
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
             </button>
           </div>
           {error && <p className="error-message">{error}</p>}
@@ -61,7 +73,9 @@ function Login() {
             <input type="checkbox" id="remember" />
             <label htmlFor="remember">Remember Me</label>
           </div>
-          <button type="submit">Login</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Logging in..." : "Login"}
+          </button>
         </form>
 
         <Link to="/forgot-password" className="forgot-password">
