@@ -1,9 +1,15 @@
-import logo from "../assets/images/jobcare-logo.png";
+import logo from "../assets/images/jobcare-logo-transparent.png";
 
 function BrandSection() {
   return (
     <div className="login-left">
-      <img src={logo} alt="JobCare Logo" className="jobcare-logo" />
+      <div className="logo-showcase">
+        <img
+          src={logo}
+          alt="JobCare Logo"
+          className="jobcare-logo"
+        />
+      </div>
 
       <h1>JobCare</h1>
 
@@ -12,8 +18,8 @@ function BrandSection() {
       <h2>Creating Opportunities.</h2>
 
       <p>
-        India's trusted platform connecting employers with skilled blue-collar
-        workers.
+        India's trusted platform connecting employers with skilled
+        blue-collar workers.
       </p>
     </div>
   );
