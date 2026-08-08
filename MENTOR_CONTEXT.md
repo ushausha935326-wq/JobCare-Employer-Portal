@@ -594,3 +594,54 @@ Completed:
 - Password strength validation
 - Replace Show/Hide text with Eye icon
 - Integrate Django JWT Authentication APIs (when backend team shares them)
+# MC-6 Progress Update
+
+## Date
+07 August 2026
+
+## Completed Today
+
+### Authentication Enhancements
+
+- Added loading state to Login page using React `useState`.
+- Login button now displays "Logging in..." while processing.
+- Disabled Login button during loading to prevent multiple submissions.
+- Added basic email format validation.
+- Installed and integrated `react-icons`.
+- Replaced Show/Hide text with professional eye and eye-slash icons.
+- Tested password visibility toggle successfully.
+- Improved authentication UI to production-style behavior.
+
+## Current Project Status
+
+### Completed
+
+- Project Setup
+- React + Vite
+- React Router
+- Login Page
+- Signup Page
+- Forgot Password Page
+- Reusable BrandSection Component
+- Controlled Inputs
+- Show/Hide Password
+- Email Validation
+- Login Validation
+- Loading Login Button
+- Disabled Login Button
+- React Icons Integration
+
+## Pending (Waiting for Backend Team)
+
+- Login API
+- Signup API
+- Forgot Password API
+- Base API URL
+- Official JobCare Logo
+
+## Next Step (MC-7)
+
+- Improve password field UI (icon inside input)
+- Responsive design improvements
+- Prepare Axios service structure
+- Integrate Django JWT Authentication APIs when received

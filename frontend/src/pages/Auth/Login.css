@@ -1,8 +1,16 @@
+/* ==============================
+   Global
+   ============================== */
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f5f7fb;
 }
+
+/* ==============================
+   Main Login Layout
+   ============================== */
 
 .login-container {
   display: flex;
@@ -15,10 +23,18 @@ body {
   gap: 80px;
 }
 
+/* ==============================
+   Left Brand Section
+   ============================== */
 
 .login-left {
   flex: 1;
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 60px;
 }
 
 .login-left h1 {
@@ -38,6 +54,20 @@ body {
   margin-top: 20px;
 }
 
+/* ==============================
+   JobCare Logo
+   ============================== */
+
+.jobcare-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/* ==============================
+   Login Card
+   ============================== */
+
 .login-card {
   background-color: white;
   width: 400px;
@@ -46,6 +76,24 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.login-card h1 {
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   Form
+   ============================== */
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ==============================
+   Input Fields
+   ============================== */
+
 .login-card input {
   width: 100%;
   padding: 12px;
@@ -53,10 +101,98 @@ body {
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 16px;
+  box-sizing: border-box;
 }
-.login-card button {
+
+.login-card input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+/* ==============================
+   Password Field
+   ============================== */
+
+.password-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-field input {
+  flex: 1;
+  margin-top: 10px;
+}
+
+/* ==============================
+   Password Visibility Button
+   ============================== */
+
+.toggle-password {
+  width: auto !important;
+  padding: 10px 14px !important;
+  margin-top: 10px;
+  background: transparent !important;
+  color: #1e3a8a !important;
+  border: 1px solid #1e3a8a !important;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password:hover {
+  background: #eef2ff !important;
+}
+
+/* ==============================
+   Password Requirements
+   ============================== */
+
+.password-requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: -10px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.password-requirements p {
+  margin: 0 0 3px;
+  font-weight: 600;
+}
+
+.password-requirements span {
+  transition: color 0.2s ease;
+}
+
+.password-requirements span.valid {
+  color: #15803d;
+}
+
+/* ==============================
+   Error Messages
+   ============================== */
+
+.error-message {
+  color: #dc2626;
+  font-size: 13px;
+  margin: -12px 0 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ==============================
+   Login Button
+   ============================== */
+
+.login-card button[type="submit"] {
   width: 100%;
-  background-color: #1E3A8A;
+  background-color: #1e3a8a;
   color: white;
   border: none;
   padding: 12px;
@@ -64,32 +200,22 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
 }
-/* code */
-.login-card button:hover {
+
+.login-card button[type="submit"]:hover {
   background-color: #2563eb;
 }
-.login-card h1 {
-  margin-bottom: 10px;
-}
-/* forgot pasward */
-.forgot-password {
-  display: block;
-  color: #1E3A8A;
-  cursor: pointer;
-  text-align: right;
-  font-size: 14px;
-  text-decoration: none;
+
+.login-card button[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
 }
 
-.forgot-password:hover {
-  text-decoration: underline;
-}
-.login-card p:last-child:hover {
-  text-decoration: underline;
-}
+/* ==============================
+   Remember Me
+   ============================== */
 
-/* remember me */
 .remember-me {
   display: flex;
   align-items: center;
@@ -100,81 +226,48 @@ body {
 .remember-me input {
   width: 18px;
   height: 18px;
+  margin-top: 0;
 }
 
 .remember-me label {
   font-size: 16px;
   color: #374151;
 }
-.login-card form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
+/* ==============================
+   Forgot Password
+   ============================== */
+
+.forgot-password {
+  display: block;
+  color: #1e3a8a;
+  cursor: pointer;
+  text-align: right;
+  font-size: 14px;
+  text-decoration: none;
 }
 
-/*Don't have an account? Sign Up*/
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   Sign Up
+   ============================== */
+
 .signup-text {
   text-align: center;
   margin-top: 20px;
   font-size: 15px;
+  color: #6b7280;
 }
 
-.signup-text span {
-  color: #1E3A8A;
+.signup-text a {
+  color: #1e3a8a;
   font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.signup-text {
-  color: #6b7280 !important;
-}
-
-/*logo*/
-.jobcare-logo {
-  width: 180px;
-  height: auto;
-  margin-bottom: 25px;
-}
-
-.login-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-right: 60px;
-}
-/*forgot passward eye button */
-.password-field {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.password-field input {
-  flex: 1;
-}
-
-.toggle-password {
-  width: auto !important;
-  padding: 10px 14px !important;
-  background: transparent !important;
-  color: #1E3A8A !important;
-  border: 1px solid #1E3A8A !important;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.toggle-password:hover {
-  background: #eef2ff !important;
-}
-
-/*showing enter your email */
-.error-message {
-  color: #dc2626;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-weight: 500;
+.signup-text a:hover {
+  text-decoration: underline;
 }
