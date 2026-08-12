@@ -1,647 +1,633 @@
-# JobCare Employer Portal - Mentor Context
+JobCare Employer Portal - Mentor Context
 
-## Project Information
+PROJECT IDENTITY
 
-Project Name: JobCare Employer Portal
+Project Name: JobCare Employer PortalDeveloper: UshaMentor: ChatGPTCurrent Step: MC-9Project Status: Authentication frontend complete/polished; rapid MVP integration phase startingPlanned Launch Target: 15 August 2026
 
-Developer: Usha
+IMPORTANT:This file is the SINGLE SOURCE OF TRUTH for continuing the project in a new chat.A new mentor/chat must read this file and continue from the current step without restarting completed work.
 
-Mentor: ChatGPT
-
-Current Step: MC-2
-
-Project Status: In Development
-
----
-
-## Team Architecture
+TEAM ARCHITECTURE
 
 Candidate App:
-Built by teammates
+
+Built by teammates.
 
 Employer Website:
-Built by Usha
+
+Built by Usha with Mentor guidance.
 
 Backend:
-Django REST Framework
+
+Django REST Framework (DRF).
 
 Authentication:
-JWT
+
+JWT.
 
 Database:
-PostgreSQL
+
+PostgreSQL.
 
 API:
-REST APIs provided by teammates
 
----
+REST APIs are provided by teammates.
 
-## Development Rules
+As of 12 August 2026, backend API contracts were requested from teammates and are expected to be shared today.
 
-1. Give only ONE task at a time.
-2. Keep responses short.
-3. Wait until Usha completes the task.
-4. Never skip steps.
-5. Build production-quality code.
-6. Employer Website only.
-7. Do not modify backend.
+Do NOT invent endpoints, request fields, response fields, or token behavior.
 
----
+Use the actual API contract supplied by teammates.
 
-## Current Progress
+GitHub repository:https://github.com/ushausha935326-wq/JobCare-Employer-Portal.git
 
-✅ Python Installed
+Branch:master
 
-✅ Node.js Installed
+DEVELOPMENT RULES
 
-✅ Git Installed
+Give only ONE coding task at a time.
 
-✅ React (Vite) Project Created
+Keep explanations beginner-friendly.
 
-✅ First Git Commit Completed
+Mention the exact file name.
 
-✅ Project Structure Created
+Mention exactly where to edit/paste code.
 
-Current Module:
+Wait until Usha confirms the task is done before moving to the next task.
 
-Project Foundation
+Build production-quality code where time allows.
 
-Next Module:
+Employer Website only.
 
-Authentication (Login Page)
+Never modify backend code.
 
----
+Explain WHY important changes are made.
 
-## Session End Rule
+Reuse components whenever possible.
 
-Before ending every coding session:
+Do not repeatedly redesign completed screens.
 
-1. Mentor updates MENTOR_CONTEXT.md.
-2. Record:
-   - Current Step
-   - Files Created
-   - Files Modified
-   - Technical Decisions
-   - Next Step
-3. Commit the changes to Git.
-4. Start the next session using the updated MENTOR_CONTEXT.md.
+Use the team's reference screenshots only as inspiration; do not copy them exactly.
 
-This file is the single source of truth for the project.
-Never rely on chat history alone.
+Preserve the current professional JobCare design unless there is a concrete reason to change it.
 
----
+Temporary frontend simulations are allowed only until the real API is received.
 
-## End of Session Workflow
+Never expose internal development notes to employers/users on the website.
 
-Before ending every coding session, the Mentor must provide:
+Employer-facing success/error text must sound like a finished product.
 
-### 1. MENTOR_CONTEXT.md Update
-- Update Current Step
-- Update Progress
-- Record Technical Decisions
-- Record Files Created
-- Record Files Modified
-- Record Next Step
+Because launch is targeted for 15 August 2026, prioritize a working MVP and integration over low-value visual polishing.
 
-### 2. Git Commit
-Provide the exact Git commands to save the day's work.
+CURRENT LAUNCH SITUATION
 
-Example:
+Today:12 August 2026
 
-git add .
-git commit -m "Day X: <Completed Work>"
+Target launch:15 August 2026
 
-### 3. New Chat Continuation
+Time available:Approximately two days of active implementation before the launch target.
 
-If a new chat is required:
+Reality check:
 
-1. Attach MENTOR_CONTEXT.md.
-2. Type:
+A fully production-complete Employer Portal with every possible feature, comprehensive security hardening, analytics, billing, messaging, extensive testing, and all edge cases is NOT realistically guaranteed in two days.
 
-Mentor, continue from the Current Step.
+A focused, working MVP/demo release with the critical employer flows can be achievable IF teammates provide stable APIs today and we aggressively prioritize the launch-critical features.
 
-The Mentor must continue from the recorded step without restarting the project.
+The immediate goal is a usable launchable MVP, not perfection.
 
----
+Priority philosophy:
 
-## Mentor Responsibilities
+Authentication must work with the real API.
 
-The Mentor is responsible for:
+Employer Dashboard must load real data.
 
-- Maintaining MENTOR_CONTEXT.md
-- Preventing contradictory instructions
-- Giving only ONE task at a time
-- Keeping responses short and clear
-- Explaining concepts before writing code
-- Building production-quality code
-- Guiding the project until deployment
+Core Job Management must work.
 
-Decision 001
+Core Candidate/Application management must work.
 
-UI Rule:
+Basic profile/navigation must work.
 
-The Employer Website must follow the team-approved template.
+Remaining advanced modules can be simplified, stubbed with clear UI, or deferred if the launch scope permits.
 
-Do not redesign the UI without team approval.
+Do not spend hours polishing already-complete Login UI while core functionality is missing.
 
-Only make improvements that preserve the approved design language.
+COMPLETED PROJECT FOUNDATION
 
-## Progress Update
+✅ Python installed✅ Node.js installed✅ Git installed✅ React + Vite project created✅ React Router installed✅ Professional project structure created✅ Local development server verified✅ GitHub repository connected✅ Initial Git commits completed✅ Employer Website ownership established
 
-### Current Step
-MC-65
+Known Git commits:
 
-### Completed Today
+8aeb39b - Day 1: Project setup completed
 
-#### Local Development
-- Installed Node.js successfully.
-- Resolved PowerShell execution policy issue.
-- Started the Vite development server using:
-  ```bash
-  npm run dev
-  ```
-- Verified local development server at:
-  ```
-  http://localhost:5173
-  ```
+40a54c1 - MC-3: Build professional authentication login UI
 
-#### Lovable
-- Finalized the Employer Login UI template.
-- Decided to keep the existing teammate-approved login design.
-- Added frontend-only validation without connecting backend APIs.
-- Downloaded the generated `index.tsx` from Lovable for inspection.
+7112f91 - MC-4: Completed authentication routing and signup foundation
 
-#### GitHub Integration
-- Connected Lovable with GitHub successfully.
-- Authorized the GitHub account.
-- Authorized the repository:
-  `JobCare-Employer-Portal`
-- Verified GitHub connection is active.
-- Returned to the Lovable project after successful authorization.
+CURRENT FOLDER STRUCTURE
 
-### Current Status
-- Local frontend environment is working.
-- Lovable project is connected to GitHub.
-- Employer Login UI is finalized.
-- Backend integration has NOT started.
-- Project linking from Lovable to the GitHub repository is the next task.
+frontend/└── src/├── assets/│   └── images/│       ├── jobcare-logo.png│       └── jobcare-logo-transparent.png│├── components/│   ├── Navbar.jsx│   ├── Sidebar.jsx│   └── BrandSection.jsx│├── pages/│   └── Auth/│       ├── Login.jsx│       ├── Login.css│       ├── Signup.jsx│       └── ForgotPassword.jsx│├── routes/│   └── AppRoutes.jsx│├── App.jsx└── main.jsx
 
-### Next Step
-MC-65:
-Link the Lovable project to the `JobCare-Employer-Portal` GitHub repository from inside the project (Share → GitHub/Connect Repository), then continue with frontend development and API integration.
-git add .
-git commit -m "Setup local environment and connect Lovable with GitHub"
+AUTHENTICATION STATUS
 
-# JobCare Employer Portal - Mentor Context
+LOGIN
 
-## Project Information
+Status:COMPLETE FRONTEND BASELINE
 
-Project Name: JobCare Employer Portal
+Completed:✅ Professional two-column layout✅ JobCare branding✅ Reusable BrandSection✅ Temporary transparent logo✅ Premium logo showcase✅ Email controlled input✅ Lowercase email normalization✅ Email format validation✅ Password controlled input✅ Strong password validation✅ Live password checklist✅ Uppercase requirement✅ Lowercase requirement✅ Number requirement✅ Special-character requirement✅ Minimum 8 characters✅ Show/Hide password✅ react-icons eye / eye-slash✅ Eye icon inside password field✅ Field-specific errors✅ Loading state✅ Disabled login button while loading✅ Remember Me React state✅ Forgot Password navigation✅ Signup navigation✅ Responsive CSS✅ Final UI polish
 
-Developer: Usha
+Important:The current Login success behavior is temporary.It currently simulates login with a loading delay and alert.This MUST be replaced by the real Django JWT login API.
 
-Mentor: ChatGPT
+SIGNUP
 
-Current Step: MC-3.32 Completed
+Status:FRONTEND COMPLETE / API PENDING
 
-Project Status: Authentication UI In Progress
+Current fields:
 
----
+Company Name
 
-## Team Architecture
+HR Name
 
-Candidate App:
-Built by teammates
+Email Address
 
-Employer Website:
-Built by Usha
+Create Password
 
-Backend:
-Django REST Framework (DRF)
+Completed:✅ Controlled form state✅ Required field validation✅ Email format validation✅ Lowercase email normalization✅ Strong password requirements✅ Live password checklist✅ Eye / eye-slash password toggle✅ Field-specific errors✅ Loading state✅ Create Account button✅ Success message✅ Login link✅ Responsive styling✅ Shared JobCare design
 
-Authentication:
-JWT (JSON Web Tokens)
+Important:The current account creation behavior is temporary frontend simulation.It does NOT create a real backend account yet.
 
-Database:
-PostgreSQL
+Correct employer-facing success text:"Account Created Successfully!"and similar professional wording.
 
-API:
-REST APIs will be provided by teammates
+DO NOT show internal messages such as:"Backend registration will be connected once the API is available."
 
----
+FORGOT PASSWORD
 
-## Development Rules
+Status:FRONTEND COMPLETE / API PENDING
 
-1. Give only ONE task at a time.
-2. Keep explanations beginner-friendly.
-3. Mention the exact file name.
-4. Mention exactly where to paste or edit code.
-5. Wait until Usha completes the task.
-6. Build production-quality code.
-7. Employer Website only.
-8. Never modify backend.
-9. Explain WHY each code change is needed.
+Completed:✅ BrandSection✅ Premium logo✅ Professional card✅ Email field✅ Email label✅ Email normalization✅ Email validation✅ Error state✅ Loading state✅ "Sending..." state✅ Success state✅ "Send Reset Link" styled button✅ "Back to Login" link✅ Responsive styling
 
----
+Important:Current success behavior is temporary.No real reset email is sent until the backend API is integrated.
 
-## Folder Structure
+CURRENT AUTHENTICATION FILES
 
-frontend/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   │   └── Auth/
-│   │       ├── Login.jsx
-│   │       ├── Login.css
-│   │       ├── Signup.jsx
-│   │       └── ForgotPassword.jsx
-│   ├── routes/
-│   │   └── AppRoutes.jsx
-│   ├── App.jsx
-│   └── main.jsx
+Important files:
 
----
+frontend/src/pages/Auth/Login.jsx
 
-## Completed
+frontend/src/pages/Auth/Login.css
 
-✅ React + Vite Project
+frontend/src/pages/Auth/Signup.jsx
 
-✅ Project Structure
+frontend/src/pages/Auth/ForgotPassword.jsx
 
-✅ React Router Installed
+frontend/src/components/BrandSection.jsx
 
-✅ Routing Working
+frontend/src/routes/AppRoutes.jsx
 
-✅ Authentication Folder Created
+The shared Login.css is intentionally used by multiple authentication screens.Do not create duplicate conflicting CSS files unless there is a clear architectural reason.
 
-✅ Login Page Created
+DESIGN DECISION
 
-✅ Login.css Connected
+The team supplied sample/reference screenshots for:
 
-✅ Login Card
+Employer Login
 
-✅ Professional Two-Column Layout
+OTP verification
 
-✅ Branding Section
+Employer Dashboard
 
-✅ Email Field
+Sidebar
 
-✅ Password Field
+Dashboard cards
 
-✅ Remember Me Checkbox
+Recent Activity
 
-✅ Login Button Styling
+Decision:
 
-✅ Button Hover Effect
+These screenshots are REFERENCE ONLY.
 
-✅ Forgot Password Link
+Our Employer Portal should keep its own professional design.
 
-✅ Sign Up Link
+Use the reference to improve spacing, hierarchy, navigation patterns, and color ideas when useful.
 
-✅ Card Shadow
+Do not replace our Login/Signup/Forgot Password design merely to imitate the reference.
 
-✅ CSS Flexbox Layout
+Current design baseline:
 
-✅ Removed <br /> based spacing
+Light neutral background
 
-✅ Professional File Structure
+White premium cards
 
----
+JobCare navy primary buttons
 
-## Login Page Status
+Blue hover states
 
-Completed approximately 90%.
+Dark professional text
 
-Remaining:
+Premium JobCare logo showcase
 
-⬜ Temporary JobCare Logo
+Responsive layout
 
-⬜ Show / Hide Password (Eye Icon)
+TEMPORARY LOGO
 
-⬜ Responsive Mobile Design
+Current temporary logo:frontend/src/assets/images/jobcare-logo-transparent.png
 
-⬜ Final UI Polish
+It was processed from the temporary JobCare logo supplied by the team.The white background was removed.A premium card/shadow presentation was added through CSS.
 
-⬜ Navigation to Signup
+The final official team logo has not yet been confirmed.When the official logo arrives:
 
-⬜ Navigation to Forgot Password
+Replace the image asset.
 
-⬜ Form Validation
+Keep the same layout/classes where possible.
 
-⬜ JWT API Integration
+BACKEND API STATUS - CRITICAL
 
----
+On 12 August 2026, teammates requested the list of APIs required for the Employer Website.
 
-## Git Status
+Requested categories:
 
-Today's work is saved locally.
+Authentication
 
-GitHub push postponed until next session.
+Employer Profile
 
----
+Dashboard
 
-## Next Session (MC-4)
+Job Management
 
-Authentication Module
+Applications/Candidates
 
-1. Final Login UI Polish
+Interviews
 
-2. Temporary JobCare Logo
+Notifications
 
-3. Show/Hide Password
+Documents/verification where applicable
 
-4. Signup Page
+At minimum, ask teammates for:
 
-5. Forgot Password Page
+Base API URL
 
-6. React Navigation
+Login API
 
-7. Django JWT Login Integration
+Signup API
 
----
+Refresh token API
 
-## Mentor Notes
+Forgot/Reset Password API
 
-- Teach as if Usha is learning React for the first time.
-- Give one task at a time.
-- Never ask Usha to replace large files without explanation.
-- Always mention the exact file and exact place to edit.
-- Explain what each CSS rule and React code does.
-- Build portfolio-quality code suitable for a startup product.
-- Aim for a modern corporate UI that will be reused across all 17 modules.
-# JobCare Employer Portal - Mentor Context
+Profile API
 
-## Project Information
+Dashboard API
 
-Project Name: JobCare Employer Portal
+Job APIs
 
-Developer: Usha
+Application/Candidate APIs
 
-Mentor: ChatGPT
+Interview APIs where in scope
 
-Current Step: MC-4.14
+For EACH API, require:
 
-Project Status: Authentication Module In Progress
+HTTP method
 
----
+Endpoint
 
-## Team Architecture
+Authentication/JWT requirement
 
-Candidate App:
-Built by teammates
+Request JSON
 
-Employer Website:
-Built by Usha
+Required fields
 
-Backend:
-Django REST Framework (DRF)
+Optional fields
 
-Authentication:
-JWT (JSON Web Tokens)
+Example response JSON
 
-Database:
-PostgreSQL
+Error responses
 
-API:
-REST APIs will be provided by teammates
+HTTP status codes
 
----
+Query parameters
 
-## Development Rules
+Pagination format if applicable
 
-1. Give only ONE task at a time.
-2. Keep explanations beginner-friendly.
-3. Always mention the exact file.
-4. Always mention exactly where to edit.
-5. Wait until Usha completes each step.
-6. Build production-quality code.
-7. Employer Website only.
-8. Never modify backend.
-9. Explain WHY every code change is made.
-10. Reuse components whenever possible.
+Also request:
 
----
+Swagger/OpenAPI documentation if available
 
-## Current Folder Structure
+Postman collection if available
 
-frontend/
-├── src/
-│   ├── assets/
-│   │   └── images/
-│   │       └── jobcare-logo.png
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Sidebar.jsx
-│   │   └── BrandSection.jsx (Created)
-│   ├── pages/
-│   │   └── Auth/
-│   │       ├── Login.jsx
-│   │       ├── Login.css
-│   │       ├── Signup.jsx
-│   │       └── ForgotPassword.jsx
-│   ├── routes/
-│   │   └── AppRoutes.jsx
-│   ├── App.jsx
-│   └── main.jsx
+Do not start API integration from guesses.Wait for the real teammate-provided contract.
 
----
+LAUNCH-CRITICAL FUNCTIONALITY
 
-## Completed
+The likely minimum launchable employer MVP should prioritize:
 
-✅ React + Vite Setup
+Priority 1 - MUST WORK
 
-✅ React Router
+Login
 
-✅ Professional Folder Structure
+Signup
 
-✅ Authentication Folder
+Forgot Password if backend supports it
 
-✅ Login Page UI
+JWT/token handling
 
-✅ Professional Login Layout
+Protected routes
 
-✅ Branding Section
+Employer Dashboard
 
-✅ Temporary JobCare Logo
+Logout
 
-✅ Login Card
+Basic Employer Profile
 
-✅ Email Field
+Priority 2 - CORE EMPLOYER VALUE
 
-✅ Password Field
+Create Job
 
-✅ Remember Me
+View My Jobs
 
-✅ Login Button
+View Job Details
 
-✅ Forgot Password Link
+Edit Job
 
-✅ Sign Up Link
+Close/Delete Job if supported
 
-✅ Card Shadow
+View Applications
 
-✅ Flexbox Layout
+View Candidate Details
 
-✅ Removed <br /> Layout
+Shortlist/Reject candidates
 
-✅ Signup Page Created
+Priority 3 - IMPORTANT IF API/TIME ALLOWS
 
-✅ Forgot Password Page Created
+Interview scheduling
 
-✅ Multi-page Navigation Working
+Dashboard analytics
 
-✅ React Router Link Navigation
+Notifications
 
-✅ Authentication Routes Working
+Document upload/verification
 
-✅ BrandSection Component Created (Ready to reuse)
+Priority 4 - DEFER IF NECESSARY
 
----
+Billing
 
-## Authentication Progress
+Credits & Usage
 
-Completed:
+Advanced reporting
 
-- Login UI
-- Signup UI Foundation
-- Forgot Password Foundation
-- Navigation
-- Routing
+Advanced messaging
 
-Remaining:
+Very detailed analytics
 
-⬜ Replace duplicate branding with BrandSection component
+Low-priority polish
 
-⬜ Show/Hide Password
+These priorities should be adjusted to the actual project requirements and the APIs teammates provide.
 
-⬜ Form Validation
+NEXT TWO-DAY EXECUTION PLAN
 
-⬜ Responsive Design
+DAY 1 - API INTEGRATION + CORE FLOW
 
-⬜ Django JWT Login API
+First:
 
-⬜ Signup API
+Receive teammate API documentation.
 
-⬜ Forgot Password API
+Understand Base URL.
 
----
+Verify Login request/response.
 
-## Next Session (MC-4.15)
+Set up API service layer.
 
-1. Use BrandSection component in Login page
+Install/use Axios only if the project already uses or needs it.
 
-2. Use BrandSection component in Signup page
+Connect Login to real Django JWT API.
 
-3. Use BrandSection component in Forgot Password page
+Store token according to backend contract.
 
-4. Explain React Components and Reusability
+Protect authenticated routes.
 
-5. Show/Hide Password
+Implement Logout.
 
-6. JWT Authentication
+Connect Signup to real API.
 
----
+Connect Forgot Password if API exists.
 
-## Mentor Notes
+Connect Employer Profile.
 
-- Continue teaching as if Usha is learning React for the first time.
-- Never assume coding knowledge.
-- Explain every new concept with simple examples.
-- One task at a time.
-- Always prioritize clean project architecture.
-- Build a portfolio-quality startup application.
-- Temporary assets can be replaced later without changing code.
+Start Dashboard API.
 
-# MC-5 Progress Update
+Do not spend significant time redesigning Login.
 
-## Date
-06 August 2026
+DAY 2 - EMPLOYER CORE FEATURES + LAUNCH
 
-## Completed Today
+Priority:
 
-### Authentication Improvements
-- Implemented reusable BrandSection component across Login, Signup, and Forgot Password pages.
-- Added React `useState` for form state management.
-- Implemented Show/Hide Password functionality.
-- Converted Email input into a controlled component.
-- Converted Password input into a controlled component.
-- Added client-side login validation.
-- Displays validation messages:
-  - Please enter your email.
-  - Please enter your password.
-- Validation succeeds when both fields are entered correctly.
+Finish Dashboard with real data.
 
-## Current Project Status
+Job list.
 
-Authentication UI is complete and interactive.
+Create Job.
 
-Completed:
-- Login Page
-- Signup Page
-- Forgot Password Page
-- React Router Navigation
-- Reusable BrandSection
-- Show/Hide Password
-- Controlled Inputs
-- Login Validation
+Job details/edit/close as supported.
 
-## Next Step (MC-6)
+Applications/candidate list.
 
-- Add Loading Login Button
-- Disable Login button while logging in
-- Email format validation
-- Password strength validation
-- Replace Show/Hide text with Eye icon
-- Integrate Django JWT Authentication APIs (when backend team shares them)
-# MC-6 Progress Update
+Candidate detail/shortlist/reject as supported.
 
-## Date
-07 August 2026
+Basic navigation/sidebar.
 
-## Completed Today
+Error/loading/empty states.
 
-### Authentication Enhancements
+Responsive smoke test.
 
-- Added loading state to Login page using React `useState`.
-- Login button now displays "Logging in..." while processing.
-- Disabled Login button during loading to prevent multiple submissions.
-- Added basic email format validation.
-- Installed and integrated `react-icons`.
-- Replaced Show/Hide text with professional eye and eye-slash icons.
-- Tested password visibility toggle successfully.
-- Improved authentication UI to production-style behavior.
+End-to-end testing of critical flows.
 
-## Current Project Status
+Fix blocking bugs.
 
-### Completed
+Git commit/push.
 
-- Project Setup
-- React + Vite
-- React Router
-- Login Page
-- Signup Page
-- Forgot Password Page
-- Reusable BrandSection Component
-- Controlled Inputs
-- Show/Hide Password
-- Email Validation
-- Login Validation
-- Loading Login Button
-- Disabled Login Button
-- React Icons Integration
+Deploy.
 
-## Pending (Waiting for Backend Team)
+Final launch smoke test.
 
-- Login API
-- Signup API
-- Forgot Password API
-- Base API URL
-- Official JobCare Logo
+If time runs out:
 
-## Next Step (MC-7)
+Keep the navigation/UI present.
 
-- Improve password field UI (icon inside input)
-- Responsive design improvements
-- Prepare Axios service structure
-- Integrate Django JWT Authentication APIs when received
+Defer non-critical data-heavy sections.
+
+Clearly mark incomplete sections only if the team agrees.
+
+Never pretend an unavailable backend function is working.
+
+API INTEGRATION APPROACH
+
+When teammates provide the APIs:
+
+Read their exact API contract.
+
+Map each endpoint to an existing frontend page/component.
+
+Create a clean API/service structure.
+
+Centralize base URL.
+
+Centralize JWT handling.
+
+Handle loading states.
+
+Handle success.
+
+Handle API validation errors.
+
+Handle unauthorized/expired token.
+
+Protect routes.
+
+Test each flow before moving on.
+
+Do not rebuild working components unnecessarily.
+
+FRONTEND QUALITY RULES DURING THE DEADLINE
+
+Because time is limited:
+
+DO:
+
+Reuse components.
+
+Reuse styles.
+
+Reuse validation patterns.
+
+Build only launch-critical screens first.
+
+Make real API integration the priority once APIs arrive.
+
+Keep clean readable code.
+
+DO NOT:
+
+Repeatedly redesign Login.
+
+Create multiple competing CSS systems.
+
+Invent backend behavior.
+
+Create fake APIs.
+
+Add unnecessary libraries.
+
+Build advanced features before the critical employer flow works.
+
+GIT / GITHUB WORKFLOW
+
+Repository:https://github.com/ushausha935326-wq/JobCare-Employer-Portal.git
+
+Branch:master
+
+At the end of every session:
+
+git statusgit add .git commit -m "<clear milestone message>"git push origin master
+
+Only report GitHub as updated after Usha confirms that the push succeeded.
+
+Current session work to save:
+
+Forgot Password final styling/behavior
+
+Signup final styling/validation
+
+Login CSS baseline preserved
+
+Temporary JobCare logo presentation preserved
+
+Mentor context updated for launch phase
+
+Suggested commit message:"MC-9: Complete authentication UI and frontend validation"
+
+NEW-CHAT HANDOFF INSTRUCTIONS
+
+If this chat reaches a limit or a new chat is needed:
+
+Attach this MENTOR_CONTEXT.md.
+
+Say:"Mentor, continue from MC-9. APIs are [received/not received]."
+
+If APIs were received, attach/paste the API documentation too.
+
+The new mentor must read this file first.
+
+Do NOT restart Login/Signup/Forgot Password.
+
+Continue from the recorded current step.
+
+If any detail is uncertain:
+
+Ask Usha to share the relevant file/API contract.
+
+Do not guess.
+
+CURRENT STEP
+
+MC-9
+
+Meaning:Authentication frontend is complete and the project is entering rapid MVP/API integration phase.
+
+Current immediate next action:
+
+Receive the actual backend API documentation from teammates.
+
+Review/map the APIs.
+
+Start real authentication integration.
+
+Then build Dashboard and core Job Management.
+
+WHAT HAS BEEN LEARNED
+
+Usha is learning while building.Important concepts already practiced:
+
+React components
+
+React Router
+
+Reusable components
+
+useState
+
+Controlled inputs
+
+Conditional rendering
+
+Form validation
+
+Password strength validation
+
+Loading states
+
+Disabled buttons
+
+React Icons
+
+Responsive CSS
+
+Git/GitHub workflow
+
+Debugging React form state
+
+Maintaining a mentor handoff file
+
+Continue teaching in beginner-friendly language.Do not assume Usha already knows advanced React concepts.
+
+FINAL MENTOR RULE
+
+The goal is not to make Usha memorize code.The goal is to help her understand enough of each feature to maintain and explain the Employer Website after the project is launched.
+
+The immediate goal is a REAL, DEMOABLE, LAUNCH-READY MVP by 15 August 2026, not an imaginary promise of full production completeness in two days.
+
+If the full scope cannot fit within the deadline, prioritize the core employer journey and explicitly distinguish:
+
+completed,
+
+integrated,
+
+simulated,
+
+deferred.

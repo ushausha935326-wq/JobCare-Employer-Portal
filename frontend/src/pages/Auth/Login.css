@@ -2,15 +2,15 @@
    GLOBAL
    ======================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f5f7fb;
   color: #111827;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* ========================================
@@ -35,10 +35,12 @@ body {
 .login-left {
   flex: 1;
   max-width: 500px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
   padding-right: 60px;
 }
 
@@ -80,6 +82,7 @@ body {
 
 .logo-showcase::before {
   content: "";
+
   position: absolute;
 
   width: 150px;
@@ -130,20 +133,26 @@ body {
 .login-left h1 {
   font-size: 56px;
   margin: 0 0 20px;
+
   color: #050505;
+
   letter-spacing: -1.5px;
 }
 
 .login-left h2 {
   font-size: 28px;
   margin: 0 0 10px;
+
   color: #050505;
 }
 
 .login-left p {
   font-size: 20px;
+
   color: #6b7280;
+
   line-height: 1.6;
+
   margin-top: 20px;
 }
 
@@ -153,7 +162,9 @@ body {
 
 .login-card {
   background-color: #ffffff;
+
   width: 400px;
+
   padding: 40px;
 
   border-radius: 16px;
@@ -167,14 +178,19 @@ body {
 
 .login-card h1 {
   margin: 0 0 8px;
+
   font-size: 30px;
+
   color: #111827;
+
   letter-spacing: -0.5px;
 }
 
 .login-subtitle {
   margin: 0 0 28px;
+
   color: #6b7280;
+
   font-size: 15px;
 }
 
@@ -185,18 +201,22 @@ body {
 .login-card form {
   display: flex;
   flex-direction: column;
+
   gap: 18px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+
   gap: 7px;
 }
 
 .form-group label {
   font-size: 14px;
+
   font-weight: 600;
+
   color: #374151;
 }
 
@@ -213,9 +233,11 @@ body {
   padding: 0 14px;
 
   border: 1px solid #d1d5db;
+
   border-radius: 8px;
 
   background-color: #ffffff;
+
   color: #111827;
 
   font-size: 15px;
@@ -246,11 +268,13 @@ body {
 
 .password-field {
   position: relative;
+
   width: 100%;
 }
 
 .password-field input {
   padding-right: 50px !important;
+
   margin: 0 !important;
 }
 
@@ -281,6 +305,7 @@ body {
   color: #6b7280 !important;
 
   border: none !important;
+
   border-radius: 50%;
 
   cursor: pointer;
@@ -294,6 +319,7 @@ body {
 
 .toggle-password:hover {
   background-color: #f3f4f6 !important;
+
   color: #1e3a8a !important;
 }
 
@@ -310,6 +336,7 @@ body {
   margin-top: 8px;
 
   font-size: 12px;
+
   color: #6b7280;
 }
 
@@ -317,6 +344,7 @@ body {
   margin: 0 0 3px;
 
   font-size: 12px;
+
   font-weight: 600;
 
   color: #4b5563;
@@ -340,6 +368,7 @@ body {
   color: #dc2626;
 
   font-size: 12px;
+
   font-weight: 500;
 
   line-height: 1.4;
@@ -390,13 +419,14 @@ body {
 }
 
 /* ========================================
-   FORGOT PASSWORD
+   FORGOT PASSWORD LINK
    ======================================== */
 
 .forgot-password {
   color: #1e3a8a;
 
   font-size: 13px;
+
   font-weight: 500;
 
   text-decoration: none;
@@ -415,12 +445,15 @@ body {
   height: 46px;
 
   background-color: #1e3a8a;
+
   color: #ffffff;
 
   border: none;
+
   border-radius: 8px;
 
   font-size: 15px;
+
   font-weight: 600;
 
   cursor: pointer;
@@ -441,6 +474,7 @@ body {
 
 .login-button:disabled {
   opacity: 0.65;
+
   cursor: not-allowed;
 }
 
@@ -471,12 +505,225 @@ body {
 }
 
 /* ========================================
+   FORGOT PASSWORD PAGE
+   ======================================== */
+
+.forgot-password-container {
+  min-height: 100vh;
+}
+
+/* Forgot Password Card */
+
+.forgot-password-card {
+  width: 400px;
+}
+
+/* Forgot Password Heading */
+
+.forgot-password-card h1 {
+  margin: 0 0 10px;
+
+  font-size: 30px;
+
+  color: #111827;
+
+  letter-spacing: -0.5px;
+}
+
+/* Forgot Password Subtitle */
+
+.forgot-password-subtitle {
+  margin: 0 0 25px;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* Forgot Password Form */
+
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* Email Field */
+
+.forgot-password-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+/* Email Label */
+
+.forgot-password-field label {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+/* Forgot Password Email Input */
+
+.forgot-password-field input {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  color: #111827;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.forgot-password-field input::placeholder {
+  color: #9ca3af;
+}
+
+.forgot-password-field input:focus {
+  border-color: #1e3a8a;
+
+  box-shadow:
+    0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+/* Forgot Password Error */
+
+.forgot-error {
+  margin: 2px 0 0;
+
+  color: #dc2626;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+/* Forgot Password Success */
+
+.forgot-success {
+  margin: 0;
+
+  padding: 10px 12px;
+
+  color: #15803d;
+
+  background-color: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+/* Send Reset Link Button */
+
+.forgot-submit-button {
+  width: 100%;
+  height: 46px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #1e3a8a;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.forgot-submit-button:hover:not(:disabled) {
+  background-color: #2563eb;
+
+  box-shadow:
+    0 8px 18px rgba(30, 58, 138, 0.18);
+
+  transform: translateY(-1px);
+}
+
+.forgot-submit-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.forgot-submit-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+/* Back to Login */
+
+.back-to-login {
+  display: block;
+
+  margin-top: 20px;
+
+  color: #1e3a8a;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.back-to-login:hover {
+  color: #2563eb;
+
+  text-decoration: underline;
+}
+
+/* ========================================
    RESPONSIVE DESIGN
    ======================================== */
 
 @media (max-width: 900px) {
   .login-container {
     gap: 40px;
+
     padding: 40px;
   }
 
@@ -509,6 +756,7 @@ body {
 @media (max-width: 700px) {
   .login-container {
     flex-direction: column;
+
     justify-content: center;
 
     gap: 35px;
@@ -518,11 +766,13 @@ body {
 
   .login-left {
     width: 100%;
+
     max-width: 500px;
 
     padding-right: 0;
 
     align-items: center;
+
     text-align: center;
   }
 
@@ -551,9 +801,18 @@ body {
 
   .login-card {
     width: 100%;
+
     max-width: 420px;
 
     padding: 30px 25px;
+  }
+
+  /* Forgot Password */
+
+  .forgot-password-card {
+    width: 100%;
+
+    max-width: 420px;
   }
 }
 
@@ -585,5 +844,265 @@ body {
 
   .forgot-password {
     font-size: 12px;
+  }
+
+  /* Forgot Password */
+
+  .forgot-password-card {
+    padding: 25px 20px;
+  }
+
+  .forgot-password-card h1 {
+    font-size: 27px;
+  }
+
+  .forgot-password-subtitle {
+    font-size: 14px;
+  }
+}
+
+/*Signup page */
+/* ========================================
+   SIGN UP PAGE
+   ======================================== */
+
+.signup-container {
+  min-height: 100vh;
+}
+
+/* Signup Card */
+
+.signup-card {
+  width: 400px;
+}
+
+/* Signup Form */
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+/* Form Groups */
+
+.signup-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Labels */
+
+.signup-form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Signup Inputs */
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+  color: #111827;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.signup-form input::placeholder {
+  color: #9ca3af;
+}
+
+.signup-form input:focus {
+  border-color: #1e3a8a;
+
+  box-shadow:
+    0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+/* ========================================
+   SIGNUP PASSWORD FIELD
+   ======================================== */
+
+.signup-form .password-field {
+  position: relative;
+  width: 100%;
+}
+
+.signup-form .password-field input {
+  padding-right: 50px !important;
+}
+
+/* Eye Icon */
+
+.signup-form .toggle-password {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  transform: translateY(-50%);
+
+  width: 34px !important;
+  height: 34px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent !important;
+
+  color: #6b7280 !important;
+
+  border: none !important;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.signup-form .toggle-password:hover {
+  background-color: #f3f4f6 !important;
+  color: #1e3a8a !important;
+}
+
+/* ========================================
+   SIGNUP PASSWORD REQUIREMENTS
+   ======================================== */
+
+.signup-password-requirements {
+  margin-top: 5px;
+}
+
+.signup-password-requirements p {
+  margin-bottom: 4px;
+}
+
+.signup-password-requirements span {
+  color: #6b7280;
+}
+
+.signup-password-requirements span.valid {
+  color: #15803d;
+}
+
+/* ========================================
+   SIGNUP SUCCESS
+   ======================================== */
+
+.signup-success {
+  margin: -2px 0 0;
+
+  padding: 10px 12px;
+
+  color: #15803d;
+
+  background-color: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* ========================================
+   SIGNUP BUTTON
+   ======================================== */
+
+.signup-button {
+  margin-top: 2px;
+}
+
+/* ========================================
+   ALREADY HAVE ACCOUNT
+   ======================================== */
+
+.signup-login-text {
+  margin: 22px 0 0;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.signup-login-text a {
+  color: #1e3a8a;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.signup-login-text a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* ========================================
+   SIGNUP RESPONSIVE
+   ======================================== */
+
+@media (max-width: 700px) {
+  .signup-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 420px) {
+  .signup-card {
+    padding: 25px 20px;
+  }
+
+  .signup-card h1 {
+    font-size: 27px;
+  }
+
+  .signup-form {
+    gap: 15px;
+  }
+
+  .signup-form .form-group label {
+    font-size: 13px;
+  }
+
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    height: 44px;
+    font-size: 14px;
   }
 }
